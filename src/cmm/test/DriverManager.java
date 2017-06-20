@@ -1,7 +1,10 @@
 package cmm.test;
 
+import com.gargoylesoftware.htmlunit.BrowserVersion;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import sun.plugin2.util.BrowserType;
 
 import java.sql.Driver;
 import java.util.concurrent.TimeUnit;
@@ -14,9 +17,10 @@ public class DriverManager {
     public static WebDriver driver;
     public static void createDriver(){
         if(driver==null) {
-            driver = new HtmlUnitDriver();
+            driver = new HtmlUnitDriver(BrowserVersion.CHROME,true);
             driver.manage().window().maximize();
             driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         }
     }
 

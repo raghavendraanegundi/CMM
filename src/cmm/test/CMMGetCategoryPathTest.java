@@ -22,6 +22,8 @@ public class CMMGetCategoryPathTest {
     @Test
     public void cmmGetCategoryPathTest(){
         Utility.CMM_Login(Constants.loginIdCMM,Constants.loginPasswordCMM);
+        Utility.search_for_paid("pa-id from excel");
+        Utility.get_category_path_of_asset();
     }
 
 }
