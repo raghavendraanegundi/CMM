@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="7429" started-at="2017-06-19T14:50:57Z" finished-at="2017-06-19T14:51:04Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="7429" started-at="2017-06-19T14:50:57Z" finished-at="2017-06-19T14:51:04Z">
+      <class name="cmm.test.CMMGetCategoryPathTest">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:cmm.test.CMMGetCategoryPathTest@43556938]" name="setUp" is-config="true" duration-ms="0" started-at="2017-06-19T20:20:57Z" finished-at="2017-06-19T20:20:57Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[org.apache.http.conn.ConnectTimeoutException: Connect to 172.30.105.144:8080 [/172.30.105.144] failed: connect timed out
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'BSL-BNG-L143', ip: '192.168.171.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: HtmlUnitDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: org.apache.http.conn.ConnectTimeoutException: Connect to 172.30.105.144:8080 [/172.30.105.144] failed: connect timed out
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'BSL-BNG-L143', ip: '192.168.171.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: HtmlUnitDriver
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.get(HtmlUnitDriver.java:688)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.lambda$8(HtmlUnitDriver.java:657)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.lambda$0(HtmlUnitDriver.java:414)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to 172.30.105.144:8080 [/172.30.105.144] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at com.gargoylesoftware.htmlunit.HttpWebConnection.getResponse(HttpWebConnection.java:194)
+	at com.gargoylesoftware.htmlunit.WebClient.loadWebResponseFromWebConnection(WebClient.java:1372)
+	at com.gargoylesoftware.htmlunit.WebClient.loadWebResponse(WebClient.java:1291)
+	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:390)
+	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:311)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.get(HtmlUnitDriver.java:670)
+	... 3 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 17 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="cmmGetCategoryPathTest()[pri:0, instance:cmm.test.CMMGetCategoryPathTest@43556938]" name="cmmGetCategoryPathTest" duration-ms="1" started-at="2017-06-19T20:21:04Z" finished-at="2017-06-19T20:21:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cmmGetCategoryPathTest -->
+      </class> <!-- cmm.test.CMMGetCategoryPathTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
