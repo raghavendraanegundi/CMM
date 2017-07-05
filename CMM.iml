@@ -19,5 +19,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="testng-6.8" level="project" />
+    <orderEntry type="library" name="aws-java-sdk-1.11.156" level="project" />
+    <orderEntry type="library" name="aspectjrt-1.8.2" level="project" />
   </component>
 </module>
